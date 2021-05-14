@@ -44,9 +44,9 @@ public class ResultActivity2 extends AppCompatActivity {
 //                intent.putExtra("student", s);
                 Bundle bundle = new Bundle();
                 bundle.putString("hoten", hoten);
-                bundle.putString("tuoi", tuoi);
-                bundle.putString("gioitinh", gioitinh);
-                bundle.putString("diemtb", diemtb);
+                bundle.putInt("tuoi", tuoi);
+                bundle.putBoolean("gioitinh", gioitinh);
+                bundle.putFloat("diemtb", diemtb);
                 Student s = new Student(hoten, tuoi, gioitinh, diemtb);
                 bundle.putSerializable("student", s);
                 intent.putExtra("thongtinsv", bundle);

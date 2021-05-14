@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ImageView;
 
 public class IntentPlicitActivity2 extends AppCompatActivity {
+    private static final int PICK_IMAGE = 100;
     ImageView imgChrome, imgPhone, imgGallery, imgCamera, imgMessage;
 
     @Override
@@ -20,14 +22,18 @@ public class IntentPlicitActivity2 extends AppCompatActivity {
 
     }
     public void camera(View v) {
+        Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
+        startActivity(intent);
     }
     public void phone(View v) {
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_CALL);
-        intent.setData(Uri.parse("0961137486"));
+        intent.setData(Uri.parse("0988888888"));
         startActivity(intent);
     }
     public void gallery(View v) {
+        Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
+        startActivityForResult(gallery, PICK_IMAGE);
 
     }
     public void message(View v) {

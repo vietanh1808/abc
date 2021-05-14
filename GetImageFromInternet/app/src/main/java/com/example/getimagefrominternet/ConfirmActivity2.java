@@ -23,7 +23,7 @@ public class ConfirmActivity2 extends AppCompatActivity {
 //        Student s2 = (Student) intent.getSerializableExtra("student");
 //        Toast.makeText(this, s2+"", Toast.LENGTH_LONG).show();
 
-        Bundle bundle = intent.getBundleExtra();
+        Bundle bundle = intent.getBundleExtra("thongtinsv");
         String hoten = bundle.getString("hoten");
         int tuoi = bundle.getInt("tuoi", 0);
         boolean gioitinh = bundle.getBoolean("gioitinh", false);
