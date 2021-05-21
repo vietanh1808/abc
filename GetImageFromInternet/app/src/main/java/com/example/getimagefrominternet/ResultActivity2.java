@@ -42,6 +42,7 @@ public class ResultActivity2 extends AppCompatActivity {
 
 //                Student s = new Student(hoten, tuoi, gioitinh, diemtb);
 //                intent.putExtra("student", s);
+
                 Bundle bundle = new Bundle();
                 bundle.putString("hoten", hoten);
                 bundle.putInt("tuoi", tuoi);

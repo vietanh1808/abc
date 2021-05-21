@@ -25,7 +25,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="52dp"
-        android:onClick="chrrome"
+        android:onClick="chrome"
         app:layout_constraintStart_toEndOf="@+id/imgCamera"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/chrome" />
@@ -46,10 +46,10 @@
         android:id="@+id/imgMessage"
         android:layout_width="117dp"
         android:layout_height="103dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="52dp"
         android:onClick="message"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintHorizontal_bias="0.218"
         app:layout_constraintStart_toEndOf="@+id/imgGallery"
         app:layout_constraintTop_toBottomOf="@+id/imgChrome"
         app:srcCompat="@drawable/message" />
@@ -65,4 +65,15 @@
         app:layout_constraintStart_toEndOf="@+id/imgChrome"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/phone" />
+
+    <ImageView
+        android:id="@+id/imgItentView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgGallery"
+        tools:srcCompat="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>
